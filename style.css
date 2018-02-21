@@ -1,0 +1,33 @@
+* {
+  box-shadow: 0 0 1px black;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.child {
+  height: 150px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrapper {
+  height: 500px;
+  width: 600px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.wrapper::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
